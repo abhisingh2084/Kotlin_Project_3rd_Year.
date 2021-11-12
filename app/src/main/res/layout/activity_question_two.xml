@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEB3B"
+    android:padding="20dp"
+    tools:context=".QuestionTwo">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/heading"
+        android:text="Lovely Sweets"
+        android:textColor="#F10707"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true">
+
+    </TextView>
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/heading"
+        android:id="@+id/cake"
+        android:src="@drawable/cake"
+        android:layout_centerHorizontal="true">
+
+    </ImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cake"
+        android:id="@+id/menutext"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#EF0606"
+        android:text="SELECT YOUR FAVOURITE SWEETS : ">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/menutext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:hint="Type Your Favourite sweets"
+        android:textColorHint="#E60C0C">
+
+    </EditText>
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/menu">
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFC107"
+            android:checked="true"
+            android:text="Gulab Jamun"
+            android:textColor="#c51d1d"
+            android:textColorHighlight="#c51d1d"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFC107"
+            android:text="Jalebi"
+            android:textColor="#c51d1d"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFC107"
+            android:text="Kaju Katli"
+            android:textColor="#c51d1d"
+            android:textSize="18sp" />
+        <RadioButton
+            android:id="@+id/radioButton5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFC107"
+            android:text="Modak"
+            android:textColor="#c51d1d"
+            android:textSize="18sp" />
+    </RadioGroup>
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="340dp"
+        android:layout_height="50dp"
+       android:layout_below="@+id/radioGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="#FF9800"
+        android:text="30ml cold drink"
+        android:textColor="#c51d1d"
+        android:textSize="18dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/place"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:backgroundTint="#F10303"
+        android:padding="10sp"
+        android:text="Place your order!"
+        app:cornerRadius="15dp" />
+
+</RelativeLayout>
